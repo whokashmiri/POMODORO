@@ -1,1 +1,3 @@
 # POMODORO
+
+The **Pomodoro Technique** is a time management method that helps you stay focused and productive. It was developed by Francesco Cirillo in the late 1980s when he was a university student struggling to complete his assignments. The technique involves breaking down your work into intervals of 25 minutes, called **pomodoros**, separated by short breaks. After four pomodoros, you can take a longer break of 15-30 minutes. The idea is to work on a single task during each pomodoro and record what you completed after each session. The technique also includes three rules for getting the most out of each interval: break down complex projects, combine small tasks, and avoid interruptions ¹²³. 

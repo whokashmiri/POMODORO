@@ -1,0 +1,279 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Pixelify+Sans&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  font-family: 'Oswald', sans-serif;
+/* font-family: 'Pixelify Sans', sans-serif; */
+  vertical-align: baseline;
+}
+
+
+/*
+------------------------------------
+Display
+------------------------------------ */
+
+#display {
+  font-weight: normal;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  padding: .5em;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*
+------------------------------------
+Buttons
+------------------------------------ */
+
+#panel {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+}
+
+button,
+.duration {
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  margin: 0;
+  padding: .5em .75em;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: #333;
+}
+
+button:active {
+  background: #222;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#session-decrement {
+  top: 12.5%;
+  left: 0;
+  width: 25%;
+  border-radius: 20px;
+}
+
+#session-increment {
+  top: 12.5%;
+  left: 75%;
+  width: 25%;
+  border-radius: 20px;
+}
+
+#break-decrement {
+  top: 50%;
+  left: 0;
+  width: 25%;
+  border-radius: 20px;
+}
+
+#break-increment {
+  top: 50%;
+  left: 75%;
+  width: 25%;
+  border-radius: 20px;
+}
+
+#start_stop {
+
+  border-radius: 20px;
+  top: 75%;
+  left: 50%;
+  width: 50%;
+}
+
+#reset {
+  top: 75%;
+  left: 0;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.addition {
+  padding-top: .3em;
+}
+
+label {
+  font-size: .9em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 12.5%;
+  position: absolute;
+  margin: 0;
+  padding: .7em .75em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#timer-label {
+  top: 3%;
+  height: auto;
+  z-index: 2;
+  background: none;
+}
+
+#break-label {
+  top: 37.5%;
+}
+
+.duration {
+  top: 0;
+  left: 25%;
+  width: 50%;
+}
+
+#session-length {
+  top: 12.5%;
+  border-radius: 20px;
+}
+
+#break-length {
+  top: 50%;
+  border-radius: 20px;
+
+
+}
+
+
+/*
+------------------------------------
+Color
+------------------------------------ */
+
+#display {
+  color: #157fdb;
+  background: antiquewhite;
+}
+
+label {
+  color: #284e34;
+  background: rgb(49, 180, 180);
+}
+
+button,
+.duration {
+  color: #fff;
+  background: #171427;
+  border: 1px solid #000;
+}
+
+.addition {
+  background: rgb(82, 92, 37);
+}
+
+.addition:hover {
+  background: rgb(65, 85, 28);
+}
+
+.addition.select,
+.addition:active {
+  background: #004d99;
+}
+
+#reset {
+  background: rgb(7, 74, 105);
+}
+
+#reset:hover {
+  background:rgb(2, 38, 54);
+}
+
+#reset.select,
+#reset:active {
+  background: #995400;
+}
+
+.start {
+  background: #00b300;
+}
+
+.start:hover {
+  background: #090;
+}
+
+.start.select,
+.start:active {
+  background: #008000;
+}
+
+.stop {
+  background: rgb(194, 110, 232);
+}
+
+.stop:hover {
+  background:  rgb(69, 39, 83);
+}
+
+.stop.select,
+.stop:active {
+  background: rgb(87, 34, 34);
+}
+
+
+/*
+------------------------------------
+Media Queries
+------------------------------------ */
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+  #display {
+    font-size: 4em;
+  }
+
+  .duration,
+  .button {
+    font-size: 2em;
+  }
+
+}
+
+@media (min-width: 750px) {
+
+  #display {
+    font-size: 8em;
+  }
+
+  .duration,
+  .button {
+    font-size: 3em;
+  }
+
+}
